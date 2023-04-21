@@ -1,6 +1,6 @@
 # Mundo-Game
-##Trabajo Practico Final
-###Maximiliano Alexis Galvan Figueroa | Comision: 40425
+## Trabajo Practico Final
+### Maximiliano Alexis Galvan Figueroa | Comision: 40425
 
 ### Hola a todos! como estan?!
 Bueno este es mi proyecto final, realize un foro orientado a video juegos, en donde un usuario puede registrarse con un perfil y compartir con una comunidad un post sobre sus juegos preferidos, brindando el titulo, descripcion y una foto para complementar. En si esa es la idea principal.
