@@ -1,0 +1,29 @@
+{% extends 'app/base.html' %} 
+
+{% block main %}
+<center>
+<h2>Registro de Usuario</h2>
+</center>
+<hr>
+
+<center>
+<form method="POST">
+ {% csrf_token %}
+
+    {% for field in form %}
+        <div class="fieldWrapper">
+        
+            {{field.errors}}
+            {{field.label_tag}} {{field}}
+    
+            {% if field.help_text %}
+            <p class="help"> {{ field.help_text|safe}} </p>
+            {% endif %}
+
+        </div>
+    {% endfor %}
+    <input type="submit" value="Registrarme">
+    <a href='{% url "login" %}'> volver </a>
+</form>
+</center>
+{% endblock %}

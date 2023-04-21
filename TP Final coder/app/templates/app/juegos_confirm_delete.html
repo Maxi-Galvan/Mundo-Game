@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %} 
+
+{% block main %}
+<h1>Estas seguro que quieres borrar el post {{object.nombre}} ??</h1>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Borrar">
+</form>
+
+{% endblock %}

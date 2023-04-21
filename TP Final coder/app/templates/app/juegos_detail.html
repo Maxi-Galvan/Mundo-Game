@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+
+{% block main %}
+    <h2>{{object.nombre}}</h2>
+    <br>
+    {{object.descripcion}}
+    <br>
+    <img src="{{object.imagen.url }}" width="320px" height="100%">
+    <br>
+    <a href="{% url 'juego-list'%}"> Volver </a>
+
+
+{% endblock %}
